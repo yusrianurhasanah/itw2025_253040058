@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ini Judul</title>
+</head>
+<body>
+Menu Makanan dengan UL
+<ul>
+    <li>Bakso</li>
+    <li>Sate</li>
+    <li>Soto</li>
+</ul>
+
+Menu Minuman dengan OL
+<ol>
+    <li>Es Jeruk</li>
+    <li>Es Teh</li>
+    <li>Es Campur</li>
+</ol>
+</body>
+</html>
