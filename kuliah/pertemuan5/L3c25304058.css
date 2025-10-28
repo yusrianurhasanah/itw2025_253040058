@@ -1,0 +1,63 @@
+body {
+  background-color: #00eaff; /* warna biru muda */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px 80px;
+}
+
+/* Judul besar */
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-family: "Comic Neue", "Comic Sans MS", cursive;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+/* Tanggal di kanan atas */
+.tanggal {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0;
+  color: darkblue;
+}
+
+/* Paragraf umum */
+p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Paragraf pertama (warna oranye) */
+.p1 {
+  color: orangered;
+}
+
+/* Semua tautan (termasuk nama penulis) */
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Saat diarahkan mouse */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Saat diklik */
+a:active {
+  color: red;
+}
+
+/* Khusus link nama penulis */
+.penulis {
+  color: darkcyan;
+  font-variant: small-caps;
+}
+
+.penulis:active {
+  color: red; /* berubah merah saat diklik */
+}

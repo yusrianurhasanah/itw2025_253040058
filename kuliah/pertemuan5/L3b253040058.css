@@ -1,0 +1,41 @@
+body {
+    background-color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 80px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 60px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 10px;
+}
+
+.tanggal {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.penulis {
+    color: darkcyan;
+    font-variant: small-caps;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.p1 {
+    color: red;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}

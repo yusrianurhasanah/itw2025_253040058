@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center 3%;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #111;
+}
+
+
+.card {
+    max-width: 860px;
+    margin: 40px auto;
+    /* background: #ffffff; */
+    padding: 38px 44px;
+    border-radius: 6px;
+    /* box-shadow: 0 18px 35px rgba(0,0,0,0.25); */
+}
+
+
+h1 {
+    font-family: "Comic Sans MS", "Brush Script MT", cursive;
+    font-size: 64px;
+    color: #173a86; /* warna biru gelap */
+    text-align: center;
+    margin: 0 0 6px 0;
+}
+
+
+h4 {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #173a86;
+    margin: 0 0 18px 0;
+}
+
+
+h3 {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+h3 a {
+    color: #b61b1b; /
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+}
+h3 a:hover { text-decoration: underline; }
+
+
+.intro {
+    color: #d35400;           
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 18px;
+    text-shadow: 0 0 0 rgba(0,0,0,0); 
+}
+
+
+.isi {
+    color: #111;
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+
+a { color: #0b64b3; }
+a:hover { text-decoration: underline; }
+
+
+@media (max-width: 600px) {
+    .card { padding: 20px; margin: 20px; }
+    h1 { font-size: 46px; }
+}
