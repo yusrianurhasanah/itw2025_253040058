@@ -1,0 +1,239 @@
+ {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at top, #2b002f, #000000 70%);
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    overflow-x: hidden; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    opacity: 0.3;
+    pointer-events: none;
+    animation: glitterMove 20s linear infinite;
+}
+
+
+.container {
+    width: 850px;
+    margin: 110px auto 40px; 
+    background: rgba(0,0,0,0.60);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.25);
+    border-radius: 20px;
+    animation: fadeIn 1.4s ease-in-out;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 850px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid #ff69b4;
+    padding: 18px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #ff69b4;
+    font-weight: 900;
+    /* Efek Neon */
+    text-shadow: 0 0 10px #ff69b4, 0 0 25px #ff1493;
+    animation: neonPulse 2.8s infinite ease-in-out;
+}
+
+.header ul {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffd5ef;
+    font-weight: bold;
+    padding: 6px 10px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #ff69b4;
+    box-shadow: 0 0 10px #ff69b4;
+    transition: 0.3s;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    height: 380px;
+    background-image: url("sampul.jpg"); 
+    background-size: 1000px;
+    background-position:center 40px;
+    border-bottom: 4px solid #ff69b4;
+    filter: brightness(80%);
+    animation: fadeSlide 1.4s ease;
+}
+
+
+#about, #article, .gallery {
+    padding: 30px; 
+}
+
+.content {
+    padding: 0; 
+}
+
+.content h2 {
+    font-size: 26px;
+    color: #ffb3dd;
+    text-shadow: 0 0 8px rgba(255, 105, 180, 0.5);
+    margin-bottom: 15px; 
+}
+
+.penulis {
+    font-size: 13px;
+    color: #f5c0e0;
+    margin-bottom: 25px; 
+    display: block;
+}
+
+.fade-in {
+    animation: fadeUp 1.4s ease;
+}
+
+
+#members {
+    padding-top: 30px;
+    padding-bottom: 50px; 
+}
+
+#members h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em; 
+    color: #ff69b4; 
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+
+.member-card {
+    width: 100%; 
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.7); 
+    border: 2px solid #ff69b4; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(255, 105, 180, 1);
+}
+
+.member-card h3 {
+    margin-top: 15px; 
+    color: #ffd5ef; 
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+.member-card p {
+    color: #ff69b4; 
+    font-size: 1em; 
+    font-style: italic;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gallery-row img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+    transition: 0.3s ease;
+}
+
+.gallery-row img:hover {
+    transform: scale(1.06);
+}
+
+
+.img-artikel {
+    width: 70%;
+    max-width: 500px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+    border: 1px solid rgba(255, 105, 180, 0.5);
+    transition: 0.35s ease;
+}
+
+.img-artikel:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 35px rgba(255, 105, 180, 0.9);
+}
+
+
+.footer {
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
+}
